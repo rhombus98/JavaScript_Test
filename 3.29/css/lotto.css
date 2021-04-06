@@ -1,0 +1,39 @@
+@charset "utf-8";
+h1{
+    text-align: center;
+}
+
+#d0{
+    width: 875px;
+    height: 25px;
+    margin: auto;
+}
+
+#d1{
+    width: 300px;
+    height: 25px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.d0{
+    width: 20px;
+    height: 10px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: lime;
+}
+
+.b35{
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.b12{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    font-size: 12px;
+}

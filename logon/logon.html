@@ -1,0 +1,23 @@
+<!DCOTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="logon.css">
+		<script src="logon.js"></script>
+		<title>ログオン</title>
+	</head>
+	<body>
+		<table border="1">
+			<th>ログオン</th>
+			<tr>
+				<td class="td1">
+					<form>
+						<span>イーメール</span>&nbsp;&nbsp;<input type="text" name="mail" id="mail" onfocus="onFocusMail()" onblur="onBlurMail()" /><br /><br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>パスワード</span>&nbsp;&nbsp;<input type="password" name="password" id="password" onfocus="onFocusPass()" onblur="onBlurPass()" /><input type="text" id="text" />&nbsp;&nbsp;<button id="b0" onmousedown="onMouseDown()" onmouseup="onMouseUp()">示す</button><br /><br />
+						<input type="button" class="submit" name="submit" value="ログオン" />
+					</form>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

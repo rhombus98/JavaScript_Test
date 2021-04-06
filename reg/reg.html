@@ -1,0 +1,31 @@
+<!DCOTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="reg.css">
+		<script src="reg.js"></script>
+		<title>登録</title>
+	</head>
+	<body>
+		<table border="1">
+			<th>登録</th>
+			<tr>
+				<td class="td1">
+					<form>
+						<br />
+						<span>イーメール</span>&nbsp;&nbsp;<input type="text" name="mail" id="mail" onfocus="onFocusMail()" onblur="onBlurMail()" onkeyup="onkeyupMail(this)"/><p>・長さは3~12</p><br /><br />
+						<span>パスワード</span>&nbsp;&nbsp;<input type="password" name="password0" id="password" onfocus="onFocusPass()" onblur="onBlurPass()" onkeyup="onkeyupPass(this)" /><p></p><br /><br />
+						<span>再確認</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password1" id="password1"/><p></p><br /><br />
+						<span>性別</span>&nbsp;
+						<select>
+							<option>男性</option>
+							<option>女性</option>
+							<option>秘密</option>
+						</select><br /><br />
+						<input class="submit" type="button" name="submit" value="登録" onclick="checkPassWord()"/>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

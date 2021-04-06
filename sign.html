@@ -1,0 +1,61 @@
+<!DCOTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登录</title>
+		<style>
+			table{
+				width:100%;
+				height:80px;
+				background-color:#ccc;
+			}
+			
+			th{
+				letter-spacing:100px;
+			}
+			
+			.td1{
+				width:100%;
+				height:200px;
+				background-color:lime;
+				text-align:center;
+			}
+			
+			span{
+				border-style:outset;
+			}
+			
+			span:hover{
+				border-style:inset;
+			}
+			
+			.submit{
+				font-size:20px;
+				border-style:outset;
+				width:100px;
+				height:50px;
+				cursor:pointer;
+			}
+			
+			.submit:hover{
+				border-style:inset;
+				background-color:#efefd2;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<table border="1">
+			<th>登录</th>
+			<tr>
+				<td class="td1">
+					<form>
+						<span>邮箱</span><input type="text" name="mail" /><br /><br />
+						<span>密码</span><input type="password" name="password" /><br /><br />
+						<input type="submit" class="submit" name="submit" value="登录" onclick="alert('登录成功!');"/>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,309 @@
+/*window.onload = function()
+{
+	document.getElementsByTagName("button")[0].onclick = function()
+	{
+		if(document.getElementsByTagName("input")[0].value === "")
+		{
+			alert("アカウントは必ずある！");
+		}
+		else
+		{
+			if(document.getElementsByTagName("input")[1].value !== "")
+			{
+				if(document.getElementsByTagName("input")[2].value === document.getElementsByTagName("input")[1].value)
+				{
+					alert("ようこそ！");
+				}
+				else
+				{
+				alert("残念ながら、再提出！");
+				}
+			}
+			
+		}
+		
+		
+	}
+}*/
+
+/*window.onlad = function(){
+	var imgs = document.getElementsByTagName("img");
+	
+	for(var i = 0; i < imgs.length ; i++)
+	{
+		imgs[i].onclick = function(){
+			this.style.borderRadius="100px";
+		};
+	}
+}*/
+
+/*window.onload = function()
+{
+	var btns = document.getElementsByTagName("button");
+
+	for(var i = 0; i < btns.length; i++)
+	{
+		btns[i].innerHTML = "クリックする";
+		btns[i].onclick = function()
+		{
+			document.getElementsByTagName("body")[0].style.backgroundColor = "#ccc";
+		}
+	}
+	
+}*/
+
+/*window.onload = function()
+{
+	var btns = document.getElementsByTagName("button");
+
+	for(var i = 0; i < btns.length; i++)
+	{
+		btns[i].onclick = function()
+		{
+			if(this.innerHTML === "红色")
+			{
+				document.getElementsByTagName("body")[0].style.backgroundColor = "red";
+			}
+
+			if(this.innerHTML === "黄色")
+			{
+				document.getElementsByTagName("body")[0].style.backgroundColor = "yellow";
+			}
+
+			if(this.innerHTML === "绿色")
+			{
+				document.getElementsByTagName("body")[0].style.backgroundColor = "green";
+			}
+
+			if(this.innerHTML === "翠绿")
+			{
+				document.getElementsByTagName("body")[0].style.backgroundColor = "lime";
+			}
+		}
+	}
+}*/
+
+/*window.onload = function()
+{
+	var btns = document.getElementsByTagName("button");
+	var inputs = document.getElementsByTagName("input");
+
+	
+	for(var i = 0; i < btns.length; i++)
+	{
+		btns[i].onclick = function()
+		{
+			if(this.innerHTML === "すべて")
+			{
+				for(var j = 0; j < inputs.length; j++)
+				{
+				inputs[j].checked = true;
+				}
+			}
+
+			if(this.innerHTML === "逆する")
+			{
+				for(var j = 0; j < inputs.length; j++)
+				{
+				inputs[j].checked = !(inputs[j].checked);
+				}
+		}
+
+			if(this.innerHTML === "キャンセル")
+			{
+				for(var j = 0; j < inputs.length; j++)
+				{
+				inputs[j].checked = false;
+				}
+		}
+		}
+		
+	}
+}*/
+
+/*window.onload = function()
+{
+	var imgs = document.getElementsByTagName("img");
+
+	for(var i = 1; i < imgs.length; i++)
+	{
+		imgs[i].onclick = function()
+		{
+			if(this.src === imgs[0].src)
+			{
+				alert("もう選ばれたんよ！");
+			}
+			else
+			{
+				document.getElementsByTagName("img")[0].src = this.src;
+			}
+		}
+	}
+}*/
+
+/*window.onload = function()
+{
+	var btns = document.getElementsByTagName("button");
+
+	for(var i = 0; i < btns.length; i++)
+	{
+		btns[i].onclick = function()
+		{
+			if(this.innerHTML === "边框")
+			{
+				document.getElementsByTagName("ul")[0].style.border = "2px red solid";
+			}
+
+			if(this.innerHTML === "取消边框")
+			{
+				document.getElementsByTagName("ul")[0].style.border = "none";
+			}
+
+			if(this.innerHTML === "文字颜色")
+			{
+				document.getElementsByTagName("ul")[0].style.color = "lime";
+			}
+
+			if(this.innerHTML === "背景颜色")
+			{
+				document.getElementsByTagName("ul")[0].style.backgroundColor = "#ccc";
+			}
+		}
+	}
+}*/
+
+/*function d()
+{
+	var date = new Date();
+
+	var year = date.getFullYear();
+
+	var month = date.getMonth() + 1;
+	if(month < 10)
+	{
+		month += "0";
+	}
+
+	var day = date.getDate();
+	if(date < 10)
+	{
+		date += "o";
+	}
+
+	var hour = date.getHours();
+	if(hour < 10)
+	{
+		hour += "0";
+	}
+
+	var min = date.getMinutes();
+	if(min < 10)
+	{
+		min += "0";
+	}
+
+	var sec = date.getSeconds();
+	if(sec < 10)
+	{
+		sec += "0";
+	}
+
+	document.getElementsByTagName("p")[0].innerHTML = year + "-" + month + "-" + day +"  " + hour + ":" + min + ":" + sec;
+
+	setTimeout("d()", 1000 * 1);
+}*/
+
+/*window.onload = function()
+{
+	d();
+}
+
+
+function d()
+{
+	var sec = document.getElementsByTagName("p");
+
+	if(sec[0].innerHTML > 0)
+	{
+		sec[0].innerHTML -= 1;
+	}
+	else
+	{
+		document.getElementsByTagName("body")[0].style.backgroundColor = "#ccc";
+	}
+
+	setTimeout("d()", 1000 * 1);
+}
+*/
+var index = 0;
+
+var imgArr = new Array("images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg");
+
+//var imgArr = new Array("red", "lime", "pink", "blue");
+
+window.onload = function()
+{	
+	d();
+}
+
+/*function imgChange()
+{
+	var imgSrc = document.getElementsByTagName("img")[0].src;
+
+	var imgArr = ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg"];
+
+	if(index >= imgArr.length)
+	{
+		index = 0;
+	}
+	else{
+		index++;
+	}
+
+	document.getElementsByTagName("img")[0].src = imgArr[index];
+
+	setTimeout("imgChange()", 1000 * 1);
+}*/
+
+/*function d()
+{
+	if(index >= imgArr.length)
+	{
+		index = 0;
+	}
+	else
+	{
+		document.getElementsByTagName("body")[0].style.backgroundColor = imgArr[index];
+		index++;
+	}
+
+	
+	
+	setTimeout("d()", 1000 * 0.5);
+}*/
+
+function d()
+{
+	if(index >= imgArr.length)
+	{
+		index = 0;
+	}
+		
+	for(var j = 0; j < document.getElementsByTagName("button").length; j++)
+	{
+		if(j === index)
+		{
+			document.getElementsByTagName("img")[0].src = imgArr[index];
+		
+			document.getElementsByTagName("button")[j].style.color = "red";
+		}
+		else
+		{
+			document.getElementsByTagName("button")[j].style.color = "black";
+		}
+	}		
+
+	index++;
+	
+	setTimeout("d()", 1000 * 1);
+}

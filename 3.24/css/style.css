@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*.s1:hover{
+	background-color:blue;
+	border:outset;
+	color:lime;
+}
+
+.s2:hover{
+	background-color:blue;
+	border:outset;
+	color:lime;
+}
+
+.s3:hover{
+	background-color:blue;
+	border:outset;
+	color:lime;
+}*/
+
+/*button:hover{
+	border:outset;
+	color:red;
+}*/
+
+/*img{
+	width:100px;
+	height:100px;
+}
+
+.d1{
+	width:500px;
+	height:500px;
+	background-color: darkseagreen;
+}
+
+.d2{
+	width:415px;
+	height:100px;
+	background-color: forestgreen;
+	margin-top: 5px;
+}
+
+#img1{
+	width:500px;
+	height: 500px;;
+}*/
+
+/*ul{
+	list-style-type: none;
+}*/
+
+img{
+	width: 200px;
+	height: 200px;
+}
